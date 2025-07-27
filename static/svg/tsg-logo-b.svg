@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW (Versão de avaliação) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="800px" height="800px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 800 800"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:black;stroke-miterlimit:22.9256}
+    .str2 {stroke:aqua;stroke-width:35;stroke-miterlimit:22.9256}
+    .str6 {stroke:aqua;stroke-width:35;stroke-miterlimit:22.9256}
+    .str4 {stroke:fuchsia;stroke-width:35;stroke-miterlimit:22.9256}
+    .str1 {stroke:fuchsia;stroke-width:35;stroke-linejoin:round;stroke-miterlimit:22.9256}
+    .str5 {stroke:fuchsia;stroke-width:35;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:22.9256}
+    .str3 {stroke:yellow;stroke-width:35;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:22.9256}
+    .fil0 {fill:none}
+   ]]>
+  </style>
+ </defs>
+ <g id="Camada_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <rect class="fil0 str0" y="-0.001" width="800" height="800"/>
+  <rect class="fil0 str0" y="-0.001" width="800" height="800"/>
+  <rect class="fil0 str1" x="200" y="200" width="500.001" height="500"/>
+  <polygon class="fil0 str2" points="400,150 525,400 650,650 400,650 150,650 275,400 "/>
+  <circle class="fil0 str3" cx="350.001" cy="349.999" r="250"/>
+  <line class="fil0 str4" x1="200" y1="584.485" x2="200" y2= "507.079" />
+  <line class="fil0 str5" x1="454.766" y1="200" x2="413.246" y2= "200" />
+  <line class="fil0 str6" x1="178.764" y1="592.474" x2="227.797" y2= "494.407" />
+  <line class="fil0 str4" x1="200" y1="629.474" x2="200" y2= "668.416" />
+ </g>
+</svg>

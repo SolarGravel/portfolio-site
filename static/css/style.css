@@ -2,25 +2,56 @@
 
 :root {
     --bs-body-color: #383838;
-    --bs-body-bg: #e2e2e2;
-    --bs-border-color: #a9a9a9;
-    --bs-link-color: #1b99b6;
-    --bs-link-hover-color: #185171;
+    --bs-body-bg: #E2E2E2;
+    --bs-border-color: #A9A9A9;
+    --bs-link-color: #00FFFF;
+    --bs-link-hover-color: #199BB6;
     --bs-emphasis-color-rgb: 89, 87, 88;
     --bs-font-sans-serif: "League Spartan", sans-serif;
+    --bs-body-font-family: "League Spartan", sans-serif;
     --bs-font-monospace: "Fira Code", monospace;
 }
 
-header {
+nav, footer {
+    --bs-secondary-color: #E2E2E2;
     font-family: var(--bs-font-monospace);
-    color: #e2e2e2;
+    color: #E2E2E2;
     background-color: #383838;
 }
 
-header .link-body-emphasis {
-    color: #e2e2e2 !important;
+nav .link-body-emphasis {
+    color: #FFFF00 !important;
 }
 
 .nav {
-    --bs-nav-pills-link-active-bg: #aa17c0;
+    --bs-nav-pills-link-active-bg: #FF00FF;
+}
+
+.dark-gradient {
+    height: 2px;
+    background: #C7A32A;
+    background: linear-gradient(90deg,rgba(198, 161, 42, 1) 0%, rgba(170, 22, 197, 1) 50%, rgba(24, 157, 181, 1) 100%);
+}
+
+.gradient {
+    height: 2px;
+    background: #FFFF00;
+    background: linear-gradient(90deg, rgba(254, 253, 0, 1) 0%, rgba(254, 0, 253, 1) 50%, rgba(2, 253, 253, 1) 100%);
+}
+
+.btn-primary {
+    --bs-btn-color: #E2E2E2;
+    --bs-btn-bg: #199BB6;
+    --bs-btn-border-color: #199BB6;
+    --bs-btn-hover-color: #E2E2E2;
+    --bs-btn-hover-bg: #34badb;
+    --bs-btn-hover-border-color: #34badb;
+    --bs-btn-focus-shadow-rgb: 25, 155, 182;
+    --bs-btn-active-color: #E2E2E2;
+    --bs-btn-active-bg: #199BB6;
+    --bs-btn-active-border-color: #199BB6;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #E2E2E2;
+    --bs-btn-disabled-bg: #71A6B1;
+    --bs-btn-disabled-border-color: #71A6B1;
 }
