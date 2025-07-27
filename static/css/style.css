@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=League+Spartan:wght@100..900&display=swap');
+
+:root {
+    --bs-body-color: #383838;
+    --bs-body-bg: #e2e2e2;
+    --bs-border-color: #a9a9a9;
+    --bs-link-color: #1b99b6;
+    --bs-link-hover-color: #185171;
+    --bs-emphasis-color-rgb: 89, 87, 88;
+    --bs-font-sans-serif: "League Spartan", sans-serif;
+    --bs-font-monospace: "Fira Code", monospace;
+}
+
+header {
+    font-family: var(--bs-font-monospace);
+    color: #e2e2e2;
+    background-color: #383838;
+}
+
+header .link-body-emphasis {
+    color: #e2e2e2 !important;
+}
+
+.nav {
+    --bs-nav-pills-link-active-bg: #aa17c0;
+}
