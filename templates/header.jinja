@@ -6,9 +6,9 @@
             <span class="fs-4">ThreeSolarGravels</span>
         </div>
         <ul class="nav nav-pills">
-            <li class="nav-item"><a href="{{ url_for('index') }}" class="nav-link active" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="{{ url_for('index') }}" class="nav-link {% if request.url_rule.endpoint == 'index' %} active {% endif %}" aria-current="page">Home</a></li>
             <li class="nav-item"><a href="#" class="nav-link">About Me</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
+            <li class="nav-item"><a href="{{ url_for('projects') }}" class="nav-link {% if request.url_rule.endpoint == 'projects' %} active {% endif %}">Projects</a></li>
             <li class="nav-item"><a href="https://github.com/SolarGravel" class="nav-link">GitHub</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Contact Me</a></li>
         </ul>

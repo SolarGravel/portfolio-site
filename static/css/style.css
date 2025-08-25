@@ -27,6 +27,10 @@ nav .link-body-emphasis {
     --bs-nav-pills-link-active-bg: #FF00FF;
 }
 
+.text-body-emphasis, .card-title {
+    font-family: var(--bs-font-monospace);
+}
+
 .dark-gradient {
     height: 2px;
     background: #C7A32A;
@@ -54,4 +58,13 @@ nav .link-body-emphasis {
     --bs-btn-disabled-color: #E2E2E2;
     --bs-btn-disabled-bg: #71A6B1;
     --bs-btn-disabled-border-color: #71A6B1;
+}
+
+.card {
+    --bs-body-color: #E2E2E2;
+    --bs-body-bg: #383838;
+    --bs-border-color: #A9A9A9;
+    --bs-link-color: #00FFFF;
+    --bs-link-hover-color: #199BB6;
+    --bs-secondary-color: #A9A9A9;
 }
