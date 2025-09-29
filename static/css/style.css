@@ -68,3 +68,11 @@ nav .link-body-emphasis {
     --bs-link-hover-color: #199BB6;
     --bs-secondary-color: #A9A9A9;
 }
+
+.zoomout {
+    transition: transform .3s;
+}
+
+.zoomout:hover {
+	transform: scale(1.1);
+}
