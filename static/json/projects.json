@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Portfolio Website",
+        "image": "static/img/portfolio.jpg",
+        "languages": [
+            "Python",
+            "CSS",
+            "HTML5"
+        ],
+        "description": "The Github link and code for this portifolio Website, cointaining the use of the Flask framework and Bootstrap for the HTML formating with custom CSS.",
+        "date": "29/09/2025",
+        "github": "https://github.com/SolarGravel/portfolio-site"
+    },
+
+    {
+        "name": "SolarDie",
+        "image": "static/img/solardie.png",
+        "languages": [
+            "Python",
+            "Discord"
+        ],
+        "description": "A bot for rolling Daggerheart dice.",
+        "date": "08/07/2025",
+        "github": "https://github.com/SolarGravel/SolarDice"
+    }
+]
