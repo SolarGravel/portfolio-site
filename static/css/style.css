@@ -43,6 +43,10 @@ nav .link-body-emphasis {
     background: linear-gradient(90deg, rgba(254, 253, 0, 1) 0%, rgba(254, 0, 253, 1) 50%, rgba(2, 253, 253, 1) 100%);
 }
 
+.gradient .border-bottom {
+
+}
+
 .btn-primary {
     --bs-btn-color: #E2E2E2;
     --bs-btn-bg: #199BB6;

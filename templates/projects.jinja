@@ -8,45 +8,44 @@
     <div class="col-lg-6 col-md-8 mx-auto">
       <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">My Projects</h1>
       <p class="lead text-body-secondary">Check all of my projects.</p>
+      <div class="border-bottom gradient"></div>
     </div>
   </div>
 </section>
 
+{% for project in projects_list %}
 <div class="container">
-  <div class="card mb-3">
+  <div class="card my-4">
     <div class="row g-0">
       <div class="col-md-3 zoomout">
-        <a href="https://github.com/SolarGravel/portfolio-site"><img src="static/img/portfolio.jpg" width="300" height="300" class="img-fluid rounded-start"
-          alt="Print of the Portfolio Website."></a>
+        <a href="{{ project['github'] }}"><img src="{{ project['image'] }}" width="300" height="300"
+            class="img-fluid rounded-start" alt="Print of the Portfolio Website."></a>
       </div>
       <div class="col-md">
         <div class="card-body">
-          <h2 class="card-title fw-bold mb-3">> Portfolio Website</i></h2>
+          <h2 class="card-title fw-bold mb-3">> {{ project['name'] }}</i></h2>
           <ul class="list-group list-group-horizontal-sm list-group-flush my-3">
-            <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                fill="currentColor" viewBox="0 0 50 50">
-                <path
-                  d="M 9 7 L 12 41 L 26 45 L 40 41 C 41 29.667 42 18.333 43 7 L 9 7 z M 11.183594 9 L 40.816406 9 L 38.128906 39.455078 L 26 42.919922 L 13.871094 39.455078 L 11.183594 9 z M 18.550781 15 L 17.589844 27 L 30.580078 27 L 30.169922 32 L 26 32.619141 L 21.880859 32 L 21.699219 30 L 17.839844 30 L 18.230469 35 L 25.990234 37 L 33.759766 35 L 34.75 23 L 22.089844 23 L 22.410156 19 L 30.769531 19 L 31 21 L 34.699219 21 L 34 15 L 18.550781 15 z">
+            {% for language in project['languages'] %}
+            <li class="list-group-item">
+              {% if icons[language]['source'] == 'outside' %}
+              <svg xmlns="http://www.w3.org/2000/svg" class="bi" width="16" height="16" fill="currentColor"
+                viewBox="0 0 50 50">
+                <path d="{{ icons[language]['path'] }}">
                 </path>
-              </svg> HTML5</li>
-            <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                fill="currentColor" viewBox="0 0 50 50">
-                <path fill-rule="evenodd"
-                  d="M 39 40 L 25 44 L 11 40 L 8 6 L 42 6 C 41 17.332031 40 28.667969 39 40 Z M 39.816406 8 L 10.183594 8 L 12.871094 38.453125 L 25 41.921875 L 37.128906 38.453125 Z M 16.800781 28 L 20.800781 28 L 20.898438 30.5 L 25 31.898438 L 29.101563 30.5 L 29.398438 26 L 20.601563 26 L 20.398438 22 L 29.601563 22 L 29.898438 18 L 16.101563 18 L 15.800781 14 L 34.101563 14 L 33.601563 22 L 32.898438 33.5 L 25 36.101563 L 17.101563 33.5 Z">
-                </path>
-              </svg> CSS</li>
-            <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                fill="currentColor" viewBox="0 0 50 50">
-                <path
-                  d="M 24.5 2 C 15.800781 2 14 6.492188 14 9.09375 L 14 14 L 24 14 L 24 15 L 9.09375 15 C 5.792969 15 2 17.601563 2 25 C 2 32.398438 5.792969 35 9.09375 35 L 15 35 L 15 29 C 15 26.800781 16.800781 25 19 25 L 31 25 C 32.699219 25 34 23.699219 34 22 L 34 9.09375 C 34 5.59375 30.699219 2 24.5 2 Z M 20 7 C 21.101563 7 22 7.898438 22 9 C 22 10.101563 21.101563 11 20 11 C 18.898438 11 18 10.101563 18 9 C 18 7.898438 18.898438 7 20 7 Z M 35 15 L 35 22 C 35 24.199219 33.199219 26 31 26 L 19 26 C 17.300781 26 16 27.300781 16 29 L 16 40.90625 C 16 44.40625 19.300781 48 25.5 48 C 34.199219 48 36 43.507813 36 40.90625 L 36 36 L 26 36 L 26 35 L 40.90625 35 C 44.207031 35 48 32.398438 48 25 C 48 17.601563 44.207031 15 40.90625 15 Z M 30 39 C 31.101563 39 32 39.898438 32 41 C 32 42.101563 31.101563 43 30 43 C 28.898438 43 28 42.101563 28 41 C 28 39.898438 28.898438 39 30 39 Z">
-                </path>
-              </svg> Python</li>
+              </svg>
+              {% endif %}
+              {% if icons[language]['source'] == 'bootstrap' %}
+              <i class="bi {{ icons[language]['name'] }}"></i>
+              {% endif %}
+              {{ language }}
+            </li>
+            {% endfor %}
           </ul>
-          <p class="card-text my-2">The Github link and code for this portifolio Website, cointaining the use of the Flask framework
-            and Bootstrap for the HTML formating with custom CSS.</p>
-          <div class="col-md mt-5">
-            <p class="card-text"><small class="float-start text-body-secondary my-2">Last updated 3 mins ago</small></p>
-            <a href="https://github.com/SolarGravel/portfolio-site" class="card-title float-end btn btn-primary">
+          <p class="card-text my-2">{{ project['description'] }}</p>
+          <div class="col-md mt-5 mb-2">
+            <p class="card-text"><small class="float-start text-body-secondary my-2">Last updated in {{ project['date']
+                }}</small></p>
+            <a href="{{ project['github'] }}" class="card-title float-end btn btn-primary">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github"
                 viewBox="0 0 16 16">
                 <path
@@ -59,5 +58,7 @@
       </div>
     </div>
   </div>
+</div>
+{% endfor %}
 
 {% endblock body %}
