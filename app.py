@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template
 import json
 
 
@@ -21,6 +21,10 @@ def projects():
     icons_list = get_json("static/json/icons.json")
     
     return render_template("projects.jinja", projects_list=projects_list, icons=icons_list)
+
+@app.route("/aboutme")
+def aboutme():
+    return render_template("aboutme.jinja")
 
 def get_json(json_file) -> list[dict]:
     with open(json_file) as projects_json:

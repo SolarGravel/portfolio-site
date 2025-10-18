@@ -43,10 +43,6 @@ nav .link-body-emphasis {
     background: linear-gradient(90deg, rgba(254, 253, 0, 1) 0%, rgba(254, 0, 253, 1) 50%, rgba(2, 253, 253, 1) 100%);
 }
 
-.gradient .border-bottom {
-
-}
-
 .btn-primary {
     --bs-btn-color: #E2E2E2;
     --bs-btn-bg: #199BB6;
@@ -79,4 +75,24 @@ nav .link-body-emphasis {
 
 .zoomout:hover {
 	transform: scale(1.1);
+}
+
+.bg-body-tertiary {
+    background-color: #199BB6 !important;
+}
+
+.bg-body-secondary {
+    background-color: #951ea5 !important;
+}
+
+.yellow-text {
+    color: #FFFF00 !important;
+}
+
+.white-text {
+    color: #E2E2E2 !important;
+}
+
+.monospace {
+    font-family: var(--bs-font-monospace);
 }
